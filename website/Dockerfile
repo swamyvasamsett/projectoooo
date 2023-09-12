@@ -5,7 +5,7 @@ FROM devopsedu/webapp
 RUN apt-get update && apt-get install -y php-mysql
 
 # Copy your application files to the container's directory
-COPY projCert/website/index.php/ /var/www/html/
+COPY . /var/www/html/
 
 # Expose port 80 for web traffic (this is already defined in the base image)
 
